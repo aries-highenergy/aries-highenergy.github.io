@@ -1,5 +1,6 @@
 schema: hugoblox/author/v1
 slug: me
+avatar_filename: me.png
 is_owner: true
 name:
   display: Dr. Kuntal Misra
