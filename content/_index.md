@@ -22,8 +22,11 @@ sections:
 
   - block: hero
     content:
-      title: "ARIES High Energy Astrophysics Group"
+      title: "Exploring the Most Energetic Explosions in the Universe"
       text: |
+        The High Energy Astrophysics Group at ARIES studies
+        Gamma-Ray Bursts, Kilonovae, Host Galaxies,
+        Afterglow Physics and Multi-Messenger Astronomy.
         Aryabhatta Research Institute of Observational Sciences (ARIES)
 
         We study Gamma-Ray Bursts, Kilonovae, Host Galaxies,
