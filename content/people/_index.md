@@ -127,7 +127,8 @@ Our former members have moved on to exciting academic opportunities worldwide:
     *   *Research Topic:* Multi-wavelength studies of core-collapse supernovae and transients.
     *   *Current Affiliation:* Postdoctoral Researcher, Hiroshima University, Japan.
 *   **Dr. Dimple Panchal** (Former PhD Student)
-    *   *Current Affiliation:* Postdoctoral Researcher, United Kingdom (UK).
+    *   *Research Topic:* Multi-wavelength analysis of Gamma-Ray Bursts (GRBs), data-driven study of GRB diversity, and characterization of astronomical instrumentation for the 3.6m DOT.
+    *   *Current Affiliation:* Postdoctoral Researcher, Institute for Gravitational Wave Astronomy, University of Birmingham, UK.
 *   **Dr. Mridweeka Singh** (Collaborator / Former Researcher)
     *   *Research Topic:* Photometry and spectroscopy of peculiar Type Iax supernovae.
 *   **Dr. R. Dastidar** (Collaborator / Former Scholar)
