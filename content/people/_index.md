@@ -126,6 +126,8 @@ Our former members have moved on to exciting academic opportunities worldwide:
 *   **Dr. Anjasha Gangopadhyay** (Former PhD Student)
     *   *Research Topic:* Multi-wavelength studies of core-collapse supernovae and transients.
     *   *Current Affiliation:* Postdoctoral Researcher, Hiroshima University, Japan.
+*   **Dr. Dimple Panchal** (Former PhD Student)
+    *   *Current Affiliation:* Postdoctoral Researcher, United Kingdom (UK).
 *   **Dr. Mridweeka Singh** (Collaborator / Former Researcher)
     *   *Research Topic:* Photometry and spectroscopy of peculiar Type Iax supernovae.
 *   **Dr. R. Dastidar** (Collaborator / Former Scholar)
