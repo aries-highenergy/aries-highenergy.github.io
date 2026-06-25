@@ -58,4 +58,136 @@
   main article h1, main article h2, main article h3 {
     text-align: left !important;
   }
+
+  /* Team Page Grid & Card Styles */
+  .team-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+    gap: 1.5rem !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .scholar-card {
+    background: rgba(30, 41, 59, 0.25) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    padding: 1.5rem !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(139, 92, 246, 0.15) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+
+  .scholar-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(6, 182, 212, 0.5) !important;
+    box-shadow: 0 12px 20px -8px rgba(139, 92, 246, 0.3) !important;
+    background: rgba(30, 41, 59, 0.4) !important;
+  }
+
+  .scholar-header {
+    display: flex !important;
+    gap: 1.25rem !important;
+    align-items: flex-start !important;
+  }
+
+  .scholar-img {
+    width: 85px !important;
+    height: 110px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    border: 2px solid rgba(139, 92, 246, 0.3) !important;
+    background-color: #1e293b !important;
+    transition: border-color 0.3s ease !important;
+  }
+
+  .scholar-card:hover .scholar-img {
+    border-color: #06b6d4 !important;
+  }
+
+  .scholar-name {
+    margin: 0 0 0.25rem 0 !important;
+    color: #f8fafc !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+  }
+
+  .scholar-role {
+    margin: 0 0 0.5rem 0 !important;
+    font-size: 0.8rem !important;
+    color: #38bdf8 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+  }
+
+  .scholar-bio {
+    margin: 0 !important;
+    font-size: 0.875rem !important;
+    color: #cbd5e1 !important;
+    line-height: 1.5 !important;
+  }
+
+  .scholar-footer {
+    margin-top: 1.25rem !important;
+    padding-top: 0.75rem !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    font-size: 0.85rem !important;
+    color: #94a3b8 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .scholar-link {
+    color: #06b6d4 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+  }
+
+  .scholar-link:hover {
+    color: #38bdf8 !important;
+    text-decoration: underline !important;
+  }
+
+  /* Group Lead Featured Card Styling */
+  .lead-card {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 2rem !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 3rem !important;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%) !important;
+    backdrop-filter: blur(12px) !important;
+    padding: 2rem !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(139, 92, 246, 0.25) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .lead-card:hover {
+    border-color: rgba(139, 92, 246, 0.5) !important;
+    box-shadow: 0 15px 30px -10px rgba(139, 92, 246, 0.2) !important;
+  }
+
+  .lead-img {
+    border-radius: 12px !important;
+    width: 150px !important;
+    height: 185px !important;
+    object-fit: cover !important;
+    border: 3px solid #8b5cf6 !important;
+    transition: transform 0.3s ease !important;
+  }
+
+  .lead-card:hover .lead-img {
+    transform: scale(1.02) !important;
+  }
+
+  .lead-title {
+    margin-top: 0 !important;
+    color: #8b5cf6 !important;
+    font-size: 1.75rem !important;
+  }
 </style>
