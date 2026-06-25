@@ -1,7 +1,37 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+  /* ---------------------------------------------------------
+     THEME FONTS & BASE STYLING
+     --------------------------------------------------------- */
+  :root {
+    --hb-font-heading: 'Space Grotesk', sans-serif !important;
+    --hb-font-body: 'Plus Jakarta Sans', sans-serif !important;
+    --hb-font-nav: 'Space Grotesk', sans-serif !important;
+  }
+
+  body {
+    background-color: #030712 !important; /* Deeper slate-955 void black */
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(249, 115, 22, 0.04) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(245, 158, 11, 0.03) 0px, transparent 50%) !important;
+    background-attachment: fixed !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+  }
+
   /* Left-align typography in content blocks for superior readability */
   .prose {
     text-align: left !important;
+    max-width: 100% !important;
+  }
+
+  /* Limit regular text paragraphs to comfortable reading width */
+  .prose > p, .prose > blockquote {
+    max-width: 48rem !important;
+    font-size: 1.05rem !important;
+    line-height: 1.75 !important;
   }
 
   /* Adjust the flex container centering to left-align the text blocks */
@@ -21,70 +51,156 @@
   .flex.flex-col.items-center.max-w-prose.mx-auto .text-3xl {
     text-align: left !important;
     width: 100% !important;
-    border-bottom: 2px solid rgba(139, 92, 246, 0.2);
+    border-bottom: 2px solid rgba(245, 158, 11, 0.25) !important;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
     color: #f8fafc;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
   }
 
   /* Add spacing and style to block subtitles */
   .flex.flex-col.items-center.max-w-prose.mx-auto .text-3xl + p {
-    color: #06b6d4 !important;
-    font-weight: 500 !important;
+    color: #f97316 !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
     margin-top: -1rem !important;
     margin-bottom: 1.5rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    font-size: 0.9rem !important;
   }
 
   /* Smooth transition for all links */
   a {
-    transition: all 0.2s ease-in-out !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
-  /* Let the main prose container span the full page width (up to the max-w-6xl container) */
-  .prose {
-    max-width: 100% !important;
-  }
-
-  /* Limit regular text paragraphs to comfortable reading width for better readability */
-  .prose > p, .prose > blockquote {
-    max-width: 48rem !important;
-  }
-
-  /* Premium layout styling for regular standard pages */
   main article {
     text-align: left !important;
   }
 
   main article h1, main article h2, main article h3 {
     text-align: left !important;
+    font-family: 'Space Grotesk', sans-serif !important;
   }
 
-  /* Team Page Grid & Card Styles */
+  /* ---------------------------------------------------------
+     CAPSULE FLOATING NAVBAR
+     --------------------------------------------------------- */
+  .page-header {
+    background: transparent !important;
+    padding: 1.25rem 1rem !important;
+    box-shadow: none !important;
+  }
+
+  .navbar {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0.5rem 1.75rem !important;
+    background: rgba(10, 15, 30, 0.75) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-radius: 9999px !important;
+    border: 1px solid rgba(245, 158, 11, 0.15) !important;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6) !important;
+  }
+
+  /* Navigation Link Items inside Capsule */
+  .navbar-nav .nav-link {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    padding: 0.45rem 1rem !important;
+    border-radius: 9999px !important; /* Capsule shaped links */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid transparent !important;
+    font-size: 0.925rem !important;
+    color: #cbd5e1 !important;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #f59e0b !important;
+    background: rgba(245, 158, 11, 0.08) !important;
+    border-color: rgba(245, 158, 11, 0.25) !important;
+    transform: scale(1.05) !important;
+  }
+
+  .navbar-nav .nav-link.active {
+    background: rgba(245, 158, 11, 0.06) !important;
+    border-color: rgba(245, 158, 11, 0.15) !important;
+    color: #f59e0b !important;
+  }
+
+  .navbar-brand {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 1.15rem !important;
+    color: #f8fafc !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  /* ---------------------------------------------------------
+     CARD COMPONENT OVERRIDES (Publications, Research, News)
+     --------------------------------------------------------- */
+  .card, 
+  .pub-list-item, 
+  .article-card, 
+  .experience-card,
+  .facility-card {
+    background: rgba(17, 24, 39, 0.4) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(245, 158, 11, 0.08) !important;
+    border-radius: 16px !important;
+    padding: 1.75rem !important;
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+
+  .card:hover, 
+  .pub-list-item:hover, 
+  .article-card:hover, 
+  .experience-card:hover,
+  .facility-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(249, 115, 22, 0.35) !important;
+    background: rgba(17, 24, 39, 0.6) !important;
+    box-shadow: 0 12px 25px -10px rgba(249, 115, 22, 0.2) !important;
+  }
+
+  /* ---------------------------------------------------------
+     TEAM PAGE GRID & INDIVIDUAL CARDS
+     --------------------------------------------------------- */
   .team-grid {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
-    gap: 1.5rem !important;
-    margin-top: 1.5rem !important;
+    gap: 1.75rem !important;
+    margin-top: 2rem !important;
   }
 
   .scholar-card {
-    background: rgba(30, 41, 59, 0.25) !important;
+    background: rgba(17, 24, 39, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    padding: 1.5rem !important;
-    border-radius: 12px !important;
-    border: 1px solid rgba(245, 158, 11, 0.12) !important;
+    padding: 1.75rem !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(245, 158, 11, 0.08) !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.3) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
   .scholar-card:hover {
     transform: translateY(-8px) !important;
     border-color: rgba(249, 115, 22, 0.4) !important;
-    box-shadow: 0 12px 22px -8px rgba(249, 115, 22, 0.25) !important;
-    background: rgba(30, 41, 59, 0.4) !important;
+    box-shadow: 0 15px 30px -10px rgba(249, 115, 22, 0.25) !important;
+    background: rgba(17, 24, 39, 0.6) !important;
   }
 
   .scholar-header {
@@ -94,12 +210,12 @@
   }
 
   .scholar-img {
-    width: 85px !important;
-    height: 113px !important;
+    width: 90px !important;
+    height: 120px !important;
     object-fit: cover !important;
     object-position: top center !important;
-    border-radius: 8px !important;
-    background-color: #1e293b !important;
+    border-radius: 10px !important;
+    background-color: #111827 !important;
     -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%) !important;
     mask-image: linear-gradient(to bottom, black 65%, transparent 100%) !important;
     border: none !important;
@@ -107,13 +223,14 @@
   }
 
   .scholar-card:hover .scholar-img {
-    transform: scale(1.03) !important;
+    transform: scale(1.04) !important;
   }
 
   .scholar-name {
     margin: 0 0 0.25rem 0 !important;
     color: #f8fafc !important;
-    font-size: 1.15rem !important;
+    font-size: 1.2rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
     font-weight: 600 !important;
   }
 
@@ -121,6 +238,7 @@
     margin: 0 0 0.5rem 0 !important;
     font-size: 0.8rem !important;
     color: #f59e0b !important;
+    font-family: 'Space Grotesk', sans-serif !important;
     letter-spacing: 0.05em !important;
     text-transform: uppercase !important;
     font-weight: 700 !important;
@@ -130,12 +248,12 @@
     margin: 0 !important;
     font-size: 0.875rem !important;
     color: #cbd5e1 !important;
-    line-height: 1.5 !important;
+    line-height: 1.6 !important;
   }
 
   .scholar-footer {
-    margin-top: 1.25rem !important;
-    padding-top: 0.75rem !important;
+    margin-top: 1.5rem !important;
+    padding-top: 1rem !important;
     border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
     font-size: 0.85rem !important;
     color: #94a3b8 !important;
@@ -147,7 +265,8 @@
   .scholar-link {
     color: #f59e0b !important;
     text-decoration: none !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
+    font-family: 'Space Grotesk', sans-serif !important;
   }
 
   .scholar-link:hover {
@@ -155,28 +274,32 @@
     text-decoration: underline !important;
   }
 
-  /* Group Lead Featured Card Styling */
+  /* ---------------------------------------------------------
+     GROUP LEAD FEATURED CARD
+     --------------------------------------------------------- */
   .lead-card {
     display: flex !important;
     align-items: flex-start !important;
     gap: 2rem !important;
     flex-wrap: wrap !important;
-    margin-bottom: 3rem !important;
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.7) 100%) !important;
+    margin-bottom: 3.5rem !important;
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.5) 0%, rgba(3, 7, 18, 0.8) 100%) !important;
     backdrop-filter: blur(12px) !important;
-    padding: 2rem !important;
-    border-radius: 16px !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    padding: 2.25rem !important;
+    border-radius: 20px !important;
     border: 1px solid rgba(245, 158, 11, 0.2) !important;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5) !important;
     transition: all 0.3s ease !important;
   }
 
   .lead-card:hover {
-    border-color: rgba(249, 115, 22, 0.5) !important;
-    box-shadow: 0 15px 30px -10px rgba(249, 115, 22, 0.2) !important;
+    border-color: rgba(249, 115, 22, 0.45) !important;
+    box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.2) !important;
   }
 
   .lead-img {
-    border-radius: 12px !important;
+    border-radius: 14px !important;
     width: 150px !important;
     height: 200px !important;
     object-fit: cover !important;
@@ -185,13 +308,56 @@
   }
 
   .lead-card:hover .lead-img {
-    transform: scale(1.02) !important;
+    transform: scale(1.03) !important;
     border-color: #f97316 !important;
   }
 
   .lead-title {
     margin-top: 0 !important;
     color: #f59e0b !important;
-    font-size: 1.75rem !important;
+    font-size: 1.85rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+  }
+
+  /* ---------------------------------------------------------
+     PREMIUM BUTTON STYLING
+     --------------------------------------------------------- */
+  .btn-primary, 
+  .btn-secondary, 
+  .btn,
+  .navbar-nav .btn {
+    font-family: 'Space Grotesk', sans-serif !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    border-radius: 9999px !important; /* Pill buttons */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    padding: 0.65rem 1.5rem !important;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%) !important;
+    color: #0f172a !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3) !important;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px) scale(1.02) !important;
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45) !important;
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: #f8fafc !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(245, 158, 11, 0.3) !important;
+    transform: translateY(-2px) !important;
   }
 </style>

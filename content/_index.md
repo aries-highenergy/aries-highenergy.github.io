@@ -50,12 +50,12 @@ sections:
       subtitle: "Meet Dr. Kuntal Misra"
       text: |
         <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
-          <img src="/media/me.png" alt="Dr. Kuntal Misra" style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover; border: 3px solid #8b5cf6; box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);">
+          <img src="/media/me.png" alt="Dr. Kuntal Misra" style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover; border: 3px solid #f59e0b; box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);">
           <div style="flex: 1; min-width: 250px;">
             <h3 style="margin-top: 0;">Dr. Kuntal Misra</h3>
             <p><strong>Scientist-E, ARIES</strong></p>
             <p style="color: #94a3b8;">Dr. Misra specializes in high-energy astrophysics, cosmic transients, and large surveys. She leads the group's research efforts and serves as the National Astronomy Education Coordinator (NAEC) for India in the International Astronomical Union (IAU).</p>
-            <p style="margin-bottom: 0;"><a href="/authors/me/" style="color: #06b6d4; font-weight: 600; text-decoration: none; border-bottom: 2px solid #06b6d4;">View Profile & Publications →</a></p>
+            <p style="margin-bottom: 0;"><a href="/authors/me/" class="scholar-link" style="font-weight: 600;">View Profile & Publications →</a></p>
           </div>
         </div>
     design:

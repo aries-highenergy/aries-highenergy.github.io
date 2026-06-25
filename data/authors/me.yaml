@@ -6,8 +6,8 @@ name:
   display: Dr. Kuntal Misra
   given: Kuntal
   family: Misra
-  alternate: ''
-  pronunciation: ''
+  alternate: ""
+  pronunciation: ""
   pronouns: she/her
 postnominals:
   - PhD
@@ -15,8 +15,8 @@ status:
   icon: "✨"
 role: Scientist-E
 bio: |
-    Dr. Kuntal Misra is a Scientist-E at the Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital, India.
-    Her research focuses on high-energy cosmic transients, including Gamma-Ray Bursts, Supernovae, and the electromagnetic counterparts of gravitational wave sources.
+  Dr. Kuntal Misra is a Scientist-E at the Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital, India.
+  Her research focuses on high-energy cosmic transients, including Gamma-Ray Bursts, Supernovae, and the electromagnetic counterparts of gravitational wave sources.
 
 affiliations:
   - name: ARIES
@@ -27,7 +27,7 @@ links:
     url: mailto:kuntal@aries.res.in
     label: E-mail Me
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=ci2NiyIAAAAJ
+    url: https://scholar.google.com/citations?hl=en&user=Iun6aNoAAAAJ
   - icon: academicons/orcid
     url: https://orcid.org/0000-0002-1825-0097
 
