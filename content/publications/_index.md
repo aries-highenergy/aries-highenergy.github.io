@@ -7,7 +7,7 @@ type: page
 # Selected Publications
 
 Below is a selection of recent and high-impact publications from the ARIES High Energy Astrophysics Group. For a full, up-to-date list of all peer-reviewed papers, please visit:
-*   [Google Scholar Profile](https://scholar.google.com/citations?user=ci2NiyIAAAAJ)
+*   [Google Scholar Profile](https://scholar.google.com/citations?user=Iun6aNoAAAAJ&hl=en&oi=ao)
 *   [NASA ADS Library](https://ui.adsabs.harvard.edu/search/q=author%3A%22Misra%2C%20Kuntal%22)
 
 ---
