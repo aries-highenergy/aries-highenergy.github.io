@@ -5,8 +5,8 @@
   "packageManager": "pnpm@10.14.0",
   "description": "Academic CV starter template for Hugo Blox with Tailwind CSS v4",
   "scripts": {
-    "dev": "PATH=\"$PWD/node-bin/bin:$PATH\" hugo server --disableFastRender",
-    "build": "PATH=\"$PWD/node-bin/bin:$PATH\" hugo --minify && PATH=\"$PWD/node-bin/bin:$PATH\" npm run pagefind",
+    "dev": "PATH=\"$PWD/node-bin/bin:/home/pksystem/go/bin:$PATH\" hugo server --disableFastRender",
+    "build": "PATH=\"$PWD/node-bin/bin:/home/pksystem/go/bin:$PATH\" hugo --minify && PATH=\"$PWD/node-bin/bin:/home/pksystem/go/bin:$PATH\" npm run pagefind",
     "pagefind": "pagefind --site public"
   },
   "dependencies": {

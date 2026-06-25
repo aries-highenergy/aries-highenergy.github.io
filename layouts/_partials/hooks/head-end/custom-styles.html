@@ -285,52 +285,29 @@
      TEAM PAGE GRID & INDIVIDUAL CARDS
      --------------------------------------------------------- */
   .team-grid {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
+    display: grid !important;
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
     gap: 1.75rem !important;
     margin-top: 2rem !important;
-    /* Break out of the 1200px centered page-body wrapper to span the full viewport width (100vw) */
-    width: 100vw !important;
-    position: relative !important;
-    left: 50% !important;
-    right: 50% !important;
-    margin-left: -50vw !important;
-    margin-right: -50vw !important;
-    /* Add padding so first and last cards align with the 1200px centered block when screen is wide */
-    padding: 1rem max(1.5rem, calc((100vw - 1200px) / 2 + 1.5rem)) 1.5rem max(1.5rem, calc((100vw - 1200px) / 2 + 1.5rem)) !important;
-    scroll-behavior: smooth !important;
-    -webkit-overflow-scrolling: touch !important;
+    margin-bottom: 2rem !important;
+    width: 100% !important;
     box-sizing: border-box !important;
   }
 
-  /* Sleek custom scrollbars matching the color theme */
-  .team-grid::-webkit-scrollbar {
-    height: 7px !important;
+  @media (min-width: 640px) {
+    .team-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
   }
 
-  .team-grid::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.03) !important;
-    border-radius: 9999px !important;
-  }
-
-  html:not(.dark) .team-grid::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.03) !important;
-  }
-
-  .team-grid::-webkit-scrollbar-thumb {
-    background: rgba(245, 158, 11, 0.25) !important;
-    border-radius: 9999px !important;
-  }
-
-  .team-grid::-webkit-scrollbar-thumb:hover {
-    background: rgba(249, 115, 22, 0.5) !important;
+  @media (min-width: 1024px) {
+    .team-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
   }
 
   .scholar-card {
-    flex: 0 0 350px !important;
-    width: 350px !important;
+    width: 100% !important;
     background: rgba(17, 24, 39, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
@@ -342,6 +319,7 @@
     justify-content: space-between !important;
     box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.3) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-sizing: border-box !important;
   }
 
   html:not(.dark) .scholar-card {
@@ -434,6 +412,32 @@
 
   .scholar-link:hover {
     text-decoration: underline !important;
+  }
+
+  .scholar-social-links {
+    display: flex !important;
+    gap: 0.75rem !important;
+    align-items: center !important;
+  }
+
+  .scholar-social-icon {
+    color: #94a3b8 !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .scholar-social-icon:hover {
+    color: #f59e0b !important;
+    transform: scale(1.15) !important;
+  }
+
+  html:not(.dark) .scholar-social-icon {
+    color: #64748b !important;
+  }
+
+  html:not(.dark) .scholar-social-icon:hover {
+    color: #b45309 !important;
   }
 
   /* ---------------------------------------------------------
