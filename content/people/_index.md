@@ -229,9 +229,9 @@ Apart from academics, I enjoy singing and learning different musical instruments
     <div class="scholar-details-hidden" style="display: none;">
       <div class="modal-focus">Conducting research on the optical and infrared follow-up of Gamma-Ray Bursts (GRBs) and their host galaxies. Also exploring multi-wavelength transient signatures.</div>
       <div class="modal-interests">Gamma Ray Bursts, Transients, Optical astronomy</div>
-      <div class="modal-bio">I am Pankaj Pawar and I come from Ahmedabad, Gujarat. I completed my B.Sc. from Gujarat University and my Masters from Delhi University specializing in Astronomy and Astrophysics. I joined as a PhD scholar at ARIES to pursue my desire of understanding the Nature. I have been since working on most elusive transient events Gamma Ray Bursts (GRBs).
+      <div class="modal-bio">I am Pankaj Pawar, originally from Ahmedabad, Gujarat. I completed my B.Sc. at Gujarat University and my Master's degree at Delhi University, specializing in Astronomy and Astrophysics. I joined ARIES as a Ph.D. scholar to pursue my passion for understanding the universe. Since joining the group, I have been studying Gamma-Ray Bursts (GRBs), which are some of the most elusive transient events in the cosmos.
 
-I also have a keen interest in nature photography and travelling. You can checkout my instagram account for some of my shots.</div>
+Beyond academics, I have a keen interest in nature photography and traveling. You can check out my Instagram account to see some of my shots.</div>
       <div class="modal-joined">2024</div>
     </div>
   </div>
