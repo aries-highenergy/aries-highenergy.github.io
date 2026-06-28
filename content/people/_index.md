@@ -80,8 +80,8 @@ We have talented research scholars carrying out advanced research on high-energy
       </div>
     </div>
     <div class="scholar-details-hidden" style="display: none;">
-      <div class="modal-focus">Exploring transient astronomical phenomena and conducting advanced research on high-energy transients.</div>
-      <div class="modal-interests">High-energy transients, Transient astronomy, Space surveys</div>
+      <div class="modal-focus">I work on CSM interacting supernovae and other non-terminal interacting transients. These transients radiate panchromatically, allowing us to use multi-wavelength data to decipher their explosion physics and mass-loss histories.</div>
+      <div class="modal-interests">Supernovae, Mass-loss in stars, CSM interaction, Gap transients, Astronomical surveys</div>
       <div class="modal-bio"></div>
       <div class="modal-joined">2021</div>
     </div>
