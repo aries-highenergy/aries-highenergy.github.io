@@ -399,7 +399,7 @@ Beyond academics, I have a keen interest in nature photography and traveling. Yo
         </ul>
       </div>
     </div>
-  </div>  </div>
+  </div>
 
 </div>
 
