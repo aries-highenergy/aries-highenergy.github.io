@@ -22,7 +22,7 @@ sections:
         image:
           filename: cosmic_background.png
           filters:
-            brightness: 0.35
+            brightness: 0.22
           parallax: true
           position: center
           size: cover
